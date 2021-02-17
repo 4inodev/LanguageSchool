@@ -50,6 +50,7 @@
                 android:textStyle="bold"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/news_banner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
@@ -98,6 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp">
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/service_courses"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="4dp"
@@ -105,10 +107,11 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="150dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/flag" />
+                            android:src="@drawable/flag"
+                            app:layout_constraintTop_toTopOf="parent"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -130,6 +133,7 @@
                             app:layout_constraintRight_toRightOf="parent"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/service_camp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="4dp"
@@ -137,10 +141,11 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="150dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/camp" />
+                            android:src="@drawable/camp"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:layout_width="match_parent"
@@ -167,6 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp">
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/service_talking"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="4dp"
@@ -175,10 +181,11 @@
                         <ImageView
                             android:id="@+id/imageView3"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="150dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/flag" />
+                            android:src="@drawable/talking"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:layout_width="match_parent"
@@ -191,7 +198,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
-                            android:text="Языковые курсы"
+                            android:text="Talking Club"
                             android:textSize="28sp"
                             android:textStyle="bold"
                             android:textColor="@color/white"
@@ -200,6 +207,7 @@
                             app:layout_constraintRight_toRightOf="parent"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/service_toefl"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="4dp"
@@ -207,10 +215,11 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="150dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/camp" />
+                            android:src="@drawable/toefl"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:layout_width="match_parent"
@@ -223,7 +232,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
-                            android:text="Летний лагерь"
+                            android:text="TOEFL"
                             android:textSize="28sp"
                             android:textStyle="bold"
                             android:textColor="@color/white"
@@ -237,6 +246,20 @@
         </LinearLayout>
     </ScrollView>
 
+    <TextView
+        android:id="@+id/call_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:text="ПОЗВОНИТЬ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
