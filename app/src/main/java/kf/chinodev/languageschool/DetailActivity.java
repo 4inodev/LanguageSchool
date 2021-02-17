@@ -16,13 +16,20 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        //init views
         headerImage = findViewById(R.id.header_image);
         headerTitle = findViewById(R.id.header_title);
         contentTextView = findViewById(R.id.content_text_view);
+        showData();
+    }
 
+
+    private void showData() {
+        //get view ID from extras
         int viewId = getIntent().getIntExtra("view_id", -1);
-        if (viewId != -1) {
-            switch (viewId) {
+        //показываем данные в зависимости от кнопки
+        if (viewId != -1) { //если view_id было найдено
+            switch (viewId) { //search view ID
                 case R.id.service_camp:
                     headerImage.setImageResource(R.drawable.camp);
                     headerTitle.setText("Летний лагерь");
