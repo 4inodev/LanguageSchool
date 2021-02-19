@@ -3,7 +3,9 @@ package kf.chinodev.languageschool;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +23,7 @@ public class DetailActivity extends AppCompatActivity {
         headerTitle = findViewById(R.id.header_title);
         contentTextView = findViewById(R.id.content_text_view);
         showData();
+        setCallClickListener();
     }
 
 
@@ -52,5 +55,17 @@ public class DetailActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    private void setCallClickListener() {
+        TextView callTextView = findViewById(R.id.call_text_view);
+        callTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("tel:" + "0558099893");
+                Intent callIntent = new Intent(Intent.ACTION_DIAL, uri);
+                startActivity(callIntent);
+            }
+        });
     }
 }
