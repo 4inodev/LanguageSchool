@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ConstraintLayout toefl = findViewById(R.id.service_toefl);
         ConstraintLayout newsBanner = findViewById(R.id.news_banner);
         TextView callTextView = findViewById(R.id.call_text_view);
+        TextView settings = findViewById(R.id.settings);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+            }
+        });
 
         //set click listeners
         courses.setOnClickListener(this);

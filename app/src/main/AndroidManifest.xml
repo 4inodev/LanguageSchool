@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LanguageSchool">
         <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
