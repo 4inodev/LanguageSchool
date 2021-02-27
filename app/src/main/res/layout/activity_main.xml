@@ -52,38 +52,11 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.viewpager.widget.ViewPager
                 android:id="@+id/news_banner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/thumb"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:background="@drawable/gradient_dark_overlay"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="15 ФЕВРАЛЯ 2021- СТАРТ ОБУЧЕНИЯ В НОВОМ ОФИСЕ"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"/>
 
             <TextView
                 android:layout_width="match_parent"
